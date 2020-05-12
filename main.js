@@ -1,19 +1,19 @@
 $.noConflict()
 jQuery(document).ready(function ($) {
-  var speed = 10
+  var speed = 2
   $('.actions').on('click', 'button', function (ev) {
     var $button = $(ev.currentTarget)
     var state = $button.attr('data-speed')
     function setSpeed(state) {
       var actions = {
         fast: function () {
-          return 10
+          return 2
         },
         normal: function () {
-          return 30
+          return 6
         },
         slow: function () {
-          return 60
+          return 18
         }
       }
       return actions[state]()
@@ -38,6 +38,8 @@ jQuery(document).ready(function ($) {
   }
 
   const code = `
+  /* 用 CSS 画只皮卡丘吧 */
+
   .preview {
     background: #ffdc2b;
     height: 100%;
@@ -84,11 +86,11 @@ jQuery(document).ready(function ($) {
   }
   .eye.left {
     right: 50%;
-    margin-right: 100px;
+    margin-right: 88px;
   }
   .eye.right {
     left: 50%;
-    margin-left: 100px;
+    margin-left: 88px;
   }
   .face {
     position: absolute;
@@ -101,11 +103,11 @@ jQuery(document).ready(function ($) {
   }
   .face.left {
     right: 50%;
-    margin-right: 116px;
+    margin-right: 100px;
   }
   .face.right {
     left: 50%;
-    margin-left: 116px;
+    margin-left: 100px;
   }
   .upperLip {
     position: absolute;
